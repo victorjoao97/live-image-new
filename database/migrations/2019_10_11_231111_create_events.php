@@ -20,10 +20,6 @@ class CreateEvents extends Migration
             $table->integer('privacy_event_id')->comment('Publico do evento');
             $table->string('location')->comment('Localização do evento');
             $table->string('presentation')->comment('Apresentação do evento');
-            $table->foreign('privacy_event_id')->references('id')->on('privacy_events')
-                ->onDelete('cascade');
-            $table->foreign('user_id')->references('id')->on('user')
-                ->onDelete('cascade');
             $table->softDeletes();
             $table->timestamps();
         });

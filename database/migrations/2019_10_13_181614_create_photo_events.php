@@ -18,10 +18,6 @@ class CreatePhotoEvents extends Migration
             $table->integer('event_id');
             $table->integer('user_id');
             $table->text('path');
-            $table->foreign('user_id')->references('id')->on('user')
-                ->onDelete('cascade');
-            $table->foreign('event_id')->references('id')->on('event_id')
-                ->onDelete('cascade');
             $table->softDeletes();
             $table->timestamps();
         });
