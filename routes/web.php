@@ -8,9 +8,9 @@ use App\Mail\TestMail;
 Route::get('/', function () {
     return view('welcome');
 });
-//Route::get('/home', function () {
-//    return view('home');
-//});
+Route::get('/home', function () {
+    redirect()->route('admin.home');
+});
 
 Route::middleware(['auth'])->group(function () {
     Route::prefix('admin')->group(function () {
