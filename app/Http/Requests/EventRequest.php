@@ -15,7 +15,7 @@ class EventRequest extends FormRequest
         if ($this->route('id') != $this->request->all()['id']){
             return false;
         }else{
-            if ($this->is('*/restore')){
+            if ($this->is('*/restore','*/destroyPerm')){
                 $event = Event::onlyTrashed()->where('user_id', Auth::id())->where('id', $this->route('id'))->first();
             }else{
                 $event = Event::where('user_id', Auth::id())->where('id', $this->route('id'))->first();
