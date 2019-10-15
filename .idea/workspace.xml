@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="305e8635-c4f7-4073-b9a2-8cfee728755e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_12_143821_create_privacy_events.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_10_12_143821_create_privacy_events.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -177,7 +178,7 @@
       <workItem from="1570661824205" duration="195000" />
       <workItem from="1570834872860" duration="50904000" />
       <workItem from="1571092144488" duration="1775000" />
-      <workItem from="1571177587143" duration="1826000" />
+      <workItem from="1571177587143" duration="3107000" />
     </task>
     <servers />
   </component>
