@@ -16,7 +16,7 @@ class CreatePrivacyEvents extends Migration
         Schema::create('privacy_events', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->json('definitions');
+            $table->json('definitions')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
