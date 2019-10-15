@@ -9,7 +9,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/home', function () {
-    redirect()->route('admin.home');
+    return redirect()->route('admin.home');
 });
 
 Route::middleware(['auth'])->group(function () {

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="305e8635-c4f7-4073-b9a2-8cfee728755e" name="Default Changelist" comment="add request destroyPerm to authorize request">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="305e8635-c4f7-4073-b9a2-8cfee728755e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -178,7 +177,7 @@
       <workItem from="1570661824205" duration="195000" />
       <workItem from="1570834872860" duration="50904000" />
       <workItem from="1571092144488" duration="1775000" />
-      <workItem from="1571177587143" duration="5340000" />
+      <workItem from="1571177587143" duration="5499000" />
     </task>
     <task id="LOCAL-00001" summary="update composer">
       <created>1571181719418</created>
@@ -201,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571182641189</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="/home redirect to /admin/home">
+      <created>1571183236881</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1571183236881</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +228,7 @@
     <MESSAGE value="update composer" />
     <MESSAGE value="update rule privacy event id" />
     <MESSAGE value="add request destroyPerm to authorize request" />
-    <option name="LAST_COMMIT_MESSAGE" value="add request destroyPerm to authorize request" />
+    <MESSAGE value="/home redirect to /admin/home" />
+    <option name="LAST_COMMIT_MESSAGE" value="/home redirect to /admin/home" />
   </component>
 </project>
