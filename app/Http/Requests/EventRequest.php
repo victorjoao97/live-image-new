@@ -27,10 +27,10 @@ class EventRequest extends FormRequest
     public function rules()
     {
         if (!$this->is('*/restore','*/destroy*','*/destroy')) {
-            return [
+            return array(
                 'name' => 'required|min:5',
-                'public_event_id' => 'required:numeric'
-            ];
+                'privacy_event_id' => 'required:numeric'
+            );
         }
         return [];
     }
