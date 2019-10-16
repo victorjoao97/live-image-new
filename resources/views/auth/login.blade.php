@@ -62,7 +62,7 @@
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif
-                                <div id="my-signin2"></div>
+                                <div id="my-signin2" class="mt-4"></div>
                             </div>
                         </div>
                     </form>

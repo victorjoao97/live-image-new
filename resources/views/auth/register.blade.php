@@ -66,6 +66,7 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>
+                                <div id="my-signin2" class="mt-4"></div>
                             </div>
                         </div>
                     </form>
