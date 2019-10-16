@@ -179,7 +179,7 @@
       <workItem from="1570661824205" duration="195000" />
       <workItem from="1570834872860" duration="50904000" />
       <workItem from="1571092144488" duration="1775000" />
-      <workItem from="1571177587143" duration="7435000" />
+      <workItem from="1571177587143" duration="7698000" />
     </task>
     <task id="LOCAL-00001" summary="update composer">
       <created>1571181719418</created>
@@ -223,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571186053942</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add google oauth">
+      <created>1571186240077</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571186240077</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
