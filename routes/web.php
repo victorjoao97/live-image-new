@@ -35,3 +35,5 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Auth::routes();
+Route::get('/redirect', 'Auth\LoginController@redirectToProvider');
+Route::get('/callback', 'Auth\LoginController@handleProviderCallback');

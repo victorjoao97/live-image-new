@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="305e8635-c4f7-4073-b9a2-8cfee728755e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/liveimage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/liveimage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -121,6 +130,8 @@
       <path value="$PROJECT_DIR$/vendor/lucascudo/laravel-pt-br-localization" />
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
       <path value="$PROJECT_DIR$/vendor/laracasts/flash" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth1-client" />
+      <path value="$PROJECT_DIR$/vendor/laravel/socialite" />
     </include_path>
   </component>
   <component name="ProjectId" id="1RyQcESFx3QpA2cnUvIChHt3Ue5" />
@@ -177,7 +188,7 @@
       <workItem from="1570661824205" duration="195000" />
       <workItem from="1570834872860" duration="50904000" />
       <workItem from="1571092144488" duration="1775000" />
-      <workItem from="1571177587143" duration="5499000" />
+      <workItem from="1571177587143" duration="7230000" />
     </task>
     <task id="LOCAL-00001" summary="update composer">
       <created>1571181719418</created>
@@ -207,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571183236881</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="/home redirect to /admin/home">
+      <created>1571183371132</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571183371132</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
