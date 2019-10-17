@@ -52,7 +52,7 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
+                            <div class="col-md-8 offset-md-2">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Login') }}
                                 </button>
@@ -62,7 +62,9 @@
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif
-                                <div id="my-signin2" class="mt-4"></div>
+                                <div class="social">
+                                    <div id="my-signin2"></div>
+                                </div>
                             </div>
                         </div>
                     </form>
