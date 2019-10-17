@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="qUuz7u6ee4msT9nPqekjraDnuLweAzCxEWc7jLjK22Y" />
-
+    {{config('google.client_id')}}
     <meta name="google-signin-client_id" content="{{env('GOOGLE_CLIENT_ID', false)}}">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -96,7 +96,7 @@
             'scope': 'profile email',
             'width': 240,
             'height': 50,
-            'longtitle': true,
+            'longtitle': false,
             'theme': 'dark',
             'onsuccess': onSuccess,
             'onfailure': onFailure
