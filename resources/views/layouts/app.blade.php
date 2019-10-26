@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="qUuz7u6ee4msT9nPqekjraDnuLweAzCxEWc7jLjK22Y" />
+    <meta name="google-site-verification" content="qUuz7u6ee4msT9nPqekjraDnuLweAzCxEWc7jLjK22Y"/>
     <meta name="google-signin-client_id" content="{{env('GOOGLE_CLIENT_ID', false)}}">
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -77,33 +78,51 @@
         </div>
     </nav>
 
-    <main class="py-4">
-        @yield('content')
-    </main>
-</div>
-<script>
-    function onSuccess(googleUser) {
-        console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-        window.location = "{{route("redirect")}}"
-    }
+    <script>
+        function onSuccess(googleUser) {
+            console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+            window.location = "{{route("redirect")}}"
+        }
 
-    function onFailure(error) {
-        console.log(error);
-    }
+        function onFailure(error) {
+            console.log(error);
+        }
 
-    function renderButton() {
-        gapi.signin2.render('my-signin2', {
-            'scope': 'profile email',
-            'width': 240,
-            'height': 50,
-            'longtitle': false,
-            'theme': 'dark',
-            'onsuccess': onSuccess,
-            'onfailure': onFailure
-        });
-    }
-</script>
+        function renderButton() {
+            gapi.signin2.render('my-signin2', {
+                'scope': 'profile email',
+                'width': 240,
+                'height': 50,
+                'longtitle': false,
+                'theme': 'dark',
+                'onsuccess': onSuccess,
+                'onfailure': onFailure
+            });
+        }
 
-<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+        function onSignIn(googleUser) {
+            // Useful data for your client-side scripts:
+            var profile = googleUser.getBasicProfile();
+            console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+            console.log('Full Name: ' + profile.getName());
+            console.log('Given Name: ' + profile.getGivenName());
+            console.log('Family Name: ' + profile.getFamilyName());
+            console.log("Image URL: " + profile.getImageUrl());
+            console.log("Email: " + profile.getEmail());
+
+            // The ID token you need to pass to your backend:
+            var id_token = googleUser.getAuthResponse().id_token;
+            console.log("ID Token: " + id_token);
+        }
+
+        <
+        main
+        class
+        = "py-4" >
+            @yield('content')
+            < /main>
+            < /div>
+    </script>
+
 </body>
 </html>

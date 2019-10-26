@@ -63,7 +63,7 @@
                                     </a>
                                 @endif
                                 <div class="social">
-                                    <div id="my-signin2"></div>
+                                    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
                                 </div>
                             </div>
                         </div>
