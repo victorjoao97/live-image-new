@@ -98,6 +98,11 @@
         $('[data-toggle="popover"]').popover()
         $('div.alert').not('.alert-important').delay(20000).fadeOut(350);
     });
+    function init() {
+        gapi.load('auth2', function() {
+            /* Ready. Make a call to gapi.auth2.init or some other API */
+        });
+    }
     function signOut() {
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function () {
