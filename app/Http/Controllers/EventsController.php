@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Event;
 use App\Http\Requests\EventRequest;
+use App\Http\Requests\EventStoreRequest;
 use App\PrivacyEvent;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -38,6 +39,8 @@ class EventsController extends Controller
     public function create()
     {
         //
+        $privacy = PrivacyEvent::all();
+        return view('events.create', ['privacy'=>$privacy]);
     }
 
     /**
@@ -46,9 +49,9 @@ class EventsController extends Controller
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(EventStoreRequest $request)
     {
-        //
+        Event::create($request->except('_token'));
     }
 
     /**

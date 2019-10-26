@@ -23,7 +23,7 @@
 <body>
 <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
     <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">{{ config('app.name', 'Laravel') }}</a>
-    <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+    <input class="form-control form-control-dark col-9 col-sm-6 col-md-9" type="text" placeholder="Search" aria-label="Search">
     <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
             <a class="nav-link" href="{{ route('logout') }}"
@@ -44,6 +44,14 @@
                 class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2">@yield('title')</h1>
                 <div class="btn-toolbar mb-2 mb-md-0">
+                    @php
+                    $route = substr(Route::currentRouteName(),0,-1) . '_create';
+                    @endphp
+                    @if(Route::has($route))
+                    <div class="btn-group mr-2">
+                        <a class="btn btn-sm btn-outline-primary" href="{{route($route)}}">Cadastrar</a>
+                    </div>
+                    @endif
                     <div class="btn-group mr-2">
                         <button class="btn btn-sm btn-outline-secondary">Compartilhar</button>
                         <button class="btn btn-sm btn-outline-secondary">Exportar</button>

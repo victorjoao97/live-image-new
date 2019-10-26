@@ -84,6 +84,7 @@
 <script>
     function onSuccess(googleUser) {
         console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+        window.location = "{{route("redirect")}}"
     }
 
     function onFailure(error) {

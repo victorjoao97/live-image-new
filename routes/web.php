@@ -21,6 +21,8 @@ Route::middleware(['auth'])->group(function () {
             Route::prefix('events')->group(function () {
                 Route::get('/', 'EventsController@index')->name('events');
                 Route::get('{id}', 'EventsController@show')->name('event_show')->where('id', '[0-9]+');
+                Route::get('create', 'EventsController@create')->name('event_create');
+                Route::post('store', 'EventsController@store')->name('event_store');
                 Route::get('{id}/edit', 'EventsController@edit')->name('event_edit')->where('id', '[0-9]+');
                 Route::post('{id}/edit', 'EventsController@update')->name('event_post')->where('id', '[0-9]+');
                 Route::delete('{id}/destroy', 'EventsController@destroy')->name('event_destroy')->where('id', '[0-9]+');
