@@ -73,6 +73,3 @@
         </ul>
     </div>
 </nav>
-<script>
-    feather.replace()
-</script>
