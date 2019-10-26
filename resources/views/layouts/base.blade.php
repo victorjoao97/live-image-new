@@ -42,8 +42,8 @@
     </ul>
 </nav>
 <div class="container-fluid" id="app">
+    @extends('layouts.nav')
     <div class="row">
-{{--        @extends('layouts.nav')--}}
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
             <div
                 class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
