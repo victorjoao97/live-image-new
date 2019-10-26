@@ -6,6 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
+    <meta name="google-site-verification" content="qUuz7u6ee4msT9nPqekjraDnuLweAzCxEWc7jLjK22Y" />
+    <meta name="google-signin-client_id" content="{{env('GOOGLE_CLIENT_ID', false)}}">
 
     <title>{{ config('app.name', 'Laravel') }} - @yield('title')</title>
     <!-- CSRF Token -->
@@ -27,7 +29,7 @@
     <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
             <a class="nav-link" href="{{ route('logout') }}"
-               onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+               onclick="signOut();event.preventDefault();document.getElementById('logout-form').submit();">
                 Sair
             </a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -86,6 +88,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
 <!-- Ícones -->
 <script src="https://unpkg.com/feather-icons"></script>
 <script>
@@ -93,7 +97,12 @@
     $(function () {
         $('[data-toggle="popover"]').popover()
         $('div.alert').not('.alert-important').delay(20000).fadeOut(350);
-    })
+    });
+    function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+        });
+    }
 </script>
 </body>
 </html>

@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="305e8635-c4f7-4073-b9a2-8cfee728755e" name="Default Changelist" comment="add google button">
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/EventStoreRequest.php" afterDir="false" />
+    <list default="true" id="305e8635-c4f7-4073-b9a2-8cfee728755e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/events/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/events/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -207,7 +201,7 @@
       <workItem from="1571221658175" duration="1379000" />
       <workItem from="1571271656253" duration="979000" />
       <workItem from="1571346911225" duration="6494000" />
-      <workItem from="1572091073299" duration="728000" />
+      <workItem from="1572091073299" duration="1540000" />
     </task>
     <task id="LOCAL-00001" summary="update composer">
       <created>1571181719418</created>
@@ -314,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571222917220</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="redirect login">
+      <created>1572092092969</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1572092092969</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,6 +342,7 @@
     <MESSAGE value="/home redirect to /admin/home" />
     <MESSAGE value="add google oauth" />
     <MESSAGE value="add google button" />
-    <option name="LAST_COMMIT_MESSAGE" value="add google button" />
+    <MESSAGE value="redirect login" />
+    <option name="LAST_COMMIT_MESSAGE" value="redirect login" />
   </component>
 </project>
